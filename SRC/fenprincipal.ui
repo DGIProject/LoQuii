@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenPrincipal</class>
+ <widget class="QMainWindow" name="FenPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>292</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FenPrincipal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 85, 85);</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="FenBeforeRegister">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>271</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+                           border: 1px solid white;
+                           border-radius: 5px;
+                           margin-top: 1ex; /* leave space at the top for the title */
+                           }
+
+                           QGroupBox::title {
+						   color: rgb(255, 255, 255);
+                           subcontrol-origin: margin;
+                           subcontrol-position: top center; /* position at the top center */
+                           padding: 0 3px;
+                           }</string>
+    </property>
+    <property name="title">
+     <string>Nous rejoindre</string>
+    </property>
+    <widget class="QPushButton" name="ButtonRegister">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton {
+color: #333;
+border: 1px solid #555;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888);
+min-width: 80px;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb);
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd);
+}</string>
+     </property>
+     <property name="text">
+      <string>Inscription</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="FenConnection">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>271</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+						   color : rgb(255, 255, 255);
+                           border: 1px solid white;
+						   border-radius: 1px;
+                           border-radius: 5px;
+                           margin-top: 1ex; /* leave space at the top for the title */
+                           }
+
+                           QGroupBox::title {
+                           subcontrol-origin: margin;
+                           subcontrol-position: top center; /* position at the top center */
+                           padding: 0 3px;
+                           }</string>
+    </property>
+    <property name="title">
+     <string>J'ai déjà un compte</string>
+    </property>
+    <widget class="QPushButton" name="ButtonConnection">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton {
+color: #333;
+border: 1px solid #555;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888);
+min-width: 80px;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb);
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd);
+}</string>
+     </property>
+     <property name="text">
+      <string>Connection</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Pseudo">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+                                         border: 1px solid #8f8f91;
+                                         border-radius:2px;
+                                         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #f6f7fa, stop: 1 #dadbde);
+                                         min-width: 80px;
+                                         }
+
+                                         QLineEdit:pressed {
+                                         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+                                         }</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Password">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>80</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+                                         border: 1px solid #8f8f91;
+                                         border-radius:2px;
+                                         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #f6f7fa, stop: 1 #dadbde);
+                                         min-width: 80px;
+                                         }
+
+                                         QLineEdit:pressed {
+                                         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+                                         }</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Mot de passe</string>
+     </property>
+     <property name="buddy">
+      <cstring>Password</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Pseudo</string>
+     </property>
+     <property name="buddy">
+      <cstring>Pseudo</cstring>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonForgotIdentifiant">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>80</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Oublié ?</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CheckSaveIdentifiant">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>129</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QCheckBox {
+	 color: rgb(255, 255, 255);
+     spacing: 4px;
+ }
+ 
+ QCheckBox::indicator {
+     width: 13px;
+     height: 13px;
+ }
+ 
+ QCheckBox::indicator:unchecked {
+     
+	background-color: rgb(198, 198, 198);
+ }
+ 
+ QCheckBox::indicator:unchecked:hover {
+	background-color: rgb(58, 176, 255);
+ }
+ 
+ QCheckBox::indicator:unchecked:pressed {
+     background-color: rgb(58, 176, 255);
+ }
+ 
+ QCheckBox::indicator:checked {
+     background-color: rgb(58, 176, 255);
+ }
+ 
+ QCheckBox::indicator:checked:hover {
+     background-color: rgb(58, 176, 255);
+ }
+ 
+ QCheckBox::indicator:checked:pressed {
+     background-color: rgb(58, 176, 255);
+ }
+ 
+ QCheckBox::indicator:indeterminate:hover {
+     background-color: rgb(58, 176, 255);
+ }
+ 
+ QCheckBox::indicator:indeterminate:pressed {
+     background-color: rgb(58, 176, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>Mémoriser</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>292</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+                               background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 lightgray, stop:1 darkgray);
+color: rgb(255, 255, 255);
+                               }
+
+                               QMenuBar::item {
+                               spacing: 3px; /* spacing between menu bar items */
+                               padding: 1px 4px;
+                               background: transparent;
+                               border-radius: 4px;
+                               }
+
+                               QMenuBar::item:selected { /* when selected using mouse or keyboard */
+                               background: #a8a8a8;
+color: rgb(255, 255, 255);
+                               }
+
+                               QMenuBar::item:pressed {
+                               background: #888888;
+color: rgb(255, 255, 255);
+                               }</string>
+   </property>
+   <widget class="QMenu" name="menuLoqu">
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>LoQuiî</string>
+    </property>
+    <addaction name="MBRegister"/>
+    <addaction name="MBUpdate"/>
+    <addaction name="separator"/>
+    <addaction name="MBHelp"/>
+    <addaction name="MBAPropos"/>
+   </widget>
+   <addaction name="menuLoqu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <action name="actionOptions">
+   <property name="text">
+    <string>Options</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionModifier_mon_image_de_profil">
+   <property name="text">
+    <string>modifier mon image de profil</string>
+   </property>
+  </action>
+  <action name="actionOptions_2">
+   <property name="text">
+    <string>options</string>
+   </property>
+  </action>
+  <action name="actionMise_jour">
+   <property name="text">
+    <string>Mise à jour</string>
+   </property>
+  </action>
+  <action name="actionQuitte">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionAide">
+   <property name="text">
+    <string>Aide</string>
+   </property>
+  </action>
+  <action name="MBAPropos">
+   <property name="text">
+    <string>A propos de LoQuiî</string>
+   </property>
+  </action>
+  <action name="MBHelp">
+   <property name="text">
+    <string>Aide</string>
+   </property>
+  </action>
+  <action name="MBUpdate">
+   <property name="text">
+    <string>Mettre à jour</string>
+   </property>
+  </action>
+  <action name="MBRegister">
+   <property name="text">
+    <string>Inscription</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>ButtonRegister</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
